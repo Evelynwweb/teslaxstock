@@ -51,9 +51,9 @@ const Header = () => {
             <Link to="/tracking" className="px-4 py-2 bg-white text-black rounded-full hover:bg-gray-200 transition text-sm">
               Track Order
             </Link>
-            <Link to="/login" className="px-4 py-2 bg-[#3B82F6] text-white rounded-full hover:bg-gray-200 transition text-sm">
-              Login
-            </Link>
+            <a href="https://tesladashboard.vercel.app" className="px-4 py-2 bg-[#3B82F6] text-white rounded-full hover:bg-gray-200 hover:text-black transition text-sm">
+            Login
+          </a>
           </div>
 
           {/* Mobile Menu Button */}
