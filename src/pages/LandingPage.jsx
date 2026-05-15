@@ -14,30 +14,34 @@ const LandingPage = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [solutionsDropdown, setSolutionsDropdown] = useState(false);
   const [loading, setLoading] = useState(true); // New loading state
+  const [startAnimation, setStartAnimation] = useState(false);
 
-  // Simulate loading time
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2500); // Show loading screen for 2.5 seconds
+useEffect(() => {
+  const animTimer = setTimeout(() => setStartAnimation(true), 50);  // trigger transition after mount
+  const loadTimer = setTimeout(() => setLoading(false), 12000);
+  return () => {
+    clearTimeout(animTimer);
+    clearTimeout(loadTimer);
+  };
+}, []);
 
-    return () => clearTimeout(timer);
-  }, []);
-
-  // --- Loading Screen ---
-  if (loading) {
-    return (
-      <div className="bg-black text-white min-h-screen w-full flex flex-col items-center justify-center">
-        {/* Exact Tesla Text Logo */}
+if (loading) {
+  return (
+    <div className="bg-black text-white min-h-screen w-full flex flex-col items-center justify-center overflow-hidden">
+      <div
+        className={`transform transition-all duration-1000 ease-out ${
+          startAnimation ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-20'
+        }`}
+      >
         <img
-              src="https://teslastockspacex.com/wp-content/uploads/2020/10/Asset-4432tesla.png"
-              alt="Tesla Stock SpaceX"
-              className="h-6 md:h-8 w-auto"
-            />
+          src="https://teslastockspacex.com/wp-content/uploads/2020/10/Asset-4432tesla.png"
+          alt="Tesla Stock SpaceX"
+          className="h-6 md:h-8 w-auto"
+        />
       </div>
-    );
-  }
-  // ----------------------
+    </div>
+  );
+} // ----------------------
 
   const heroSlides = [
     {
@@ -425,6 +429,13 @@ const LandingPage = () => {
      <Footer />
 
       <style jsx>{`
+      @keyframes fillBar {
+        0% { width: 0%; }
+        100% { width: 100%; }
+      }
+      .animate-loading-bar {
+        animation: fillBar 2.5s ease-out forwards;
+      }
         @keyframes fadeInUp {
           from {
             opacity: 0;
