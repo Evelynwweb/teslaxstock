@@ -239,7 +239,7 @@ if (loading) {
     Track Order
   </a>
   <a
-    href="https://tesladashboard.vercel.app"
+    href="https://user.spacexnova.com/"
     className="min-w-[152px] text-center px-6 py-[0.6rem] bg-white/[0.08] text-white font-medium text-[0.7rem] tracking-[0.12em] uppercase rounded-full border border-white/20 backdrop-blur-[12px] hover:bg-white hover:text-black hover:border-white transition-all duration-300 active:scale-95"
   >
     Get Started
@@ -456,7 +456,7 @@ if (loading) {
                       ))}
                     </ul>
                     
-                    <a href="https://tesladashboard.vercel.app" className="block w-full text-center px-4 py-2 bg-white text-black font-medium text-xs rounded-full hover:bg-zinc-200 transition-all duration-300">
+                    <a href="https://user.spacexnova.com/" className="block w-full text-center px-4 py-2 bg-white text-black font-medium text-xs rounded-full hover:bg-zinc-200 transition-all duration-300">
                       Get Started
                     </a>
                   </div>
