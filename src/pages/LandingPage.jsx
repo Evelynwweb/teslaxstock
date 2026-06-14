@@ -391,7 +391,7 @@ function HeroSection() {
             Track Order
           </a>
           <a
-            href="https://tesladashboard.vercel.app/"
+            href="https://account.tslxstock.com/"
             style={{
               minWidth: 148,
               textAlign: 'center',
@@ -805,7 +805,7 @@ const LandingPage = () => {
                               </li>
                             ))}
                           </ul>
-                          <a href="https://tesladashboard.vercel.app/" style={{
+                          <a href="https://account.tslxstock.com/" style={{
                             display: 'block', textAlign: 'center', padding: '10px 20px',
                             background: '#fff', color: '#000',
                             fontFamily: "'Poppins', sans-serif", fontWeight: 500, fontSize: '0.7rem',
