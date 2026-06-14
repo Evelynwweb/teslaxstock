@@ -157,7 +157,7 @@ const Header = () => {
                 onMouseEnter={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.color = '#000'; e.currentTarget.style.borderColor = '#fff'; }}
                 onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'rgba(228,228,231,0.8)'; e.currentTarget.style.borderColor = 'rgba(63,63,70,0.9)'; }}
               >Track Order</Link>
-              <a href="https://user.spacexnova.com/" style={{
+              <a href="https://account.tslxstock.com/" style={{
                 padding: '7px 18px',
                 background: '#2563EB',
                 color: '#fff',
@@ -277,7 +277,7 @@ const Header = () => {
                   fontFamily: "'Poppins', sans-serif", fontSize: '0.72rem', fontWeight: 400,
                   transition: 'all 0.25s', letterSpacing: '0.06em',
                 }}>Track Order</Link>
-                <a href="https://user.spacexnova.com/" style={{
+                <a href="https://account.tslxstock.com/" style={{
                   textAlign: 'center', padding: '10px 20px',
                   background: '#2563EB', color: '#fff', borderRadius: 100, textDecoration: 'none',
                   fontFamily: "'Poppins', sans-serif", fontSize: '0.72rem', fontWeight: 400,
