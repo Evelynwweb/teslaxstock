@@ -1,3 +1,4 @@
+// App.jsx
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
 import Tracking from './pages/Tracking';
@@ -8,10 +9,12 @@ import AirFreight from './pages/AirFreight';
 import RoadFreight from './pages/RoadFreight';
 import OceanFreight from './pages/OceanFreight';
 import Warehouse from './pages/Warehouse';
+import SmartsuppChat from './components/SmartsuppChat';  // ← ADD THIS
 
 const App = () => {
   return (
     <BrowserRouter>
+      <SmartsuppChat />   {/* ← ADD THIS LINE - chat appears on every page */}
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/tracking" element={<Tracking />} />
